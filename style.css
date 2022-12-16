@@ -1,0 +1,243 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    
+
+}
+.menu__title{
+    text-align: center;
+}
+.menu__list{
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #9799A6;
+    background-color: #FFF;
+    text-decoration: none;
+    transition: .5s;
+    display: block;
+    border-bottom: 1px solid #9799A6;
+    text-align: center;
+
+}
+
+.menu__list__item{
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #9799A6;
+    background-color: #FFF;
+    text-decoration: none;
+    transition: .5s;
+    display: block;
+    border-bottom: 1px solid #9799A6;
+}
+
+
+/*Sección Title*/
+
+section.title{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+}
+.title__network__item{
+    text-align: center;
+    font: inherit;
+}
+
+/*Sección About*/
+
+section.about{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/*Sección Hobbies*/
+.skills{
+    text-align: center;
+}
+.skill__box{
+    height: 100px;
+    background-color: #FFF;
+    text-align: center;
+    margin: 1%;
+    transition: .3s;
+    box-shadow: 2px 2px 2px #ccc;
+    position: relative;
+    text-align: center;
+}
+section.hobbies{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; 
+    text-align: center;
+}
+
+
+
+/* Experiencia Académica*/
+
+section.academic{
+    text-align: center;
+}
+
+/* experiencia*/
+
+section.experience{
+    text-align: center;
+
+
+}
+
+/*Contacto*/
+
+section.formcontato{
+    
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 10px;
+    justify-content: center;
+
+}
+
+
+.formcontato__input{
+    
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    text-align: center;
+   
+    
+}
+
+.formcontato__textarea{
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+.formcontato__botao{
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+/*footeer*/
+
+section.footer{
+    text-align: center;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
